@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa de notas de alumnos</title>
+  <link rel="stylesheet" href="estyles.css">
+</head>
+<body>
+
+  <main class="contenedor">
+
+    <section class="tarjeta">
+      <h1>Programa de notas de alumnos</h1>
+      <p class="contador" id="contador">Alumnos registrados: 0 de 10</p>
+
+      <form id="formularioAlumno">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ej: Manuel Lopez">
+
+        <label for="certamen1">Certamen 1:</label>
+        <input type="number" id="certamen1" min="0" max="100" placeholder="0 a 100">
+
+        <label for="certamen2">Certamen 2:</label>
+        <input type="number" id="certamen2" min="0" max="100" placeholder="0 a 100">
+
+        <label for="certamen3">Certamen 3:</label>
+        <input type="number" id="certamen3" min="0" max="100" placeholder="0 a 100">
+
+        <button type="submit" id="botonAgregar">Agregar Alumno</button>
+      </form>
+
+      <p id="mensaje" class="mensaje"></p>
+    </section>
+
+    <section class="tarjeta oculto" id="resultados">
+      <h2>Resultados</h2>
+      <div id="listaAlumnos"></div>
+      <div id="resumenCurso"></div>
+      <div id="ranking"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
